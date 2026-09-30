@@ -55,6 +55,17 @@ body {
   }
 }
 
+@media  (max-width: 419px) {
+  .text-inp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+      max-width: 100%;
+    }
+  }
+}
+
 .radio-inp {
   margin-top: 30px;
   border: 2px solid white;
