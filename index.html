@@ -7,6 +7,47 @@
     <link rel="stylesheet" href="./assets/style/_style.css" />
   </head>
   <body>
-  
+    <form>
+      <fieldset>
+        <legend>Create an account</legend>
+      </fieldset>
+      <h2>Create an account</h2>
+      <p>We always keep your name and email address private.</p>
+      <article>
+        <section class="text-inp">
+          <input type="text" class="form-item" placeholder="first name" />
+          <input type="text" class="form-item" placeholder="last name" />
+          <input type="text" class="form-item" placeholder="display name" />
+          <input type="email" class="form-item" placeholder="email address" />
+          <input type="password" class="form-item" placeholder="password" />
+          <input
+            type="password"
+            class="form-item"
+            placeholder="password comfirmation"
+          />
+        </section>
+        <section class="radio-inp">
+          <fieldset class="radio-inp">
+            <input type="radio" name="bayer" />
+            <label for="bayer">Join As a Buyer</label>
+            <p>
+              I am looking for a Name, Logo or Tagline for my business, brand or
+              product.
+            </p>
+          </fieldset>
+          <fieldset class="radio-inp">
+            <input type="radio" name="seller" />
+            <label for="seller">Join As a Creative or Marketplace Seller</label>
+            <p>
+              I plan to submit neme ideas, Logo designs or sell names in Domain
+              Marketplace.
+            </p>
+          </fieldset>
+          <input type="checkbox" name="allow" />
+          <label for="allow">Allow Squadhelp to send marketing/promotional offers from time to time</label>
+        </section>
+        <input type="submit" name="create" value="Create account">
+      </article>
+    </form>
   </body>
 </html>
