@@ -32,38 +32,20 @@ body {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
-  input {
-    height: 70px;
-    width: 100%;
-    max-width: 47%;
-    min-width: max-content;
-    border-radius: 5px;
-    border-style: none;
-    margin-top: 20px;
-    text-transform: capitalize;
-    font-weight: bold;
-  }
-
-  ::placeholder {
-    padding: 25px 20px;
-    opacity: 0.7;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    min-width: fit-content;
-  }
+  gap: 20px 30px;
+  
 }
-
-@media  (max-width: 419px) {
-  .text-inp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    input{
-      max-width: 100%;
-    }
-  }
+.form-item {
+  padding: 20px 30px;
+  flex-grow: 1;
+  height: 70px;
+  border-radius: 5px;
+  border-style: none;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.form-item::placeholder{
+    opacity: 0.7;
 }
 
 .radio-inp {
