@@ -1,75 +1,85 @@
 body {
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
+  font-size: 15px;
   color: white;
-  font-size: 14px;
 }
+/* form-container */
 .form-container {
-  max-width: 625px;
-  min-width: 320px;
+  margin: 0 auto;
   padding: 20px 30px;
-  background-color: #3faaf5;
+  width: 670px;
+  min-height: 770px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  background-color: #3faaf5;
 }
-.form-container .form-title {
-  width: 70%;
-  text-align: center;
+
+/* form-title */
+.form-title {
   margin: 0 auto;
-  h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    word-wrap: break-word;
-  }
-  p {
-    font-size: 15px;
-    letter-spacing: 1px;
-  }
+  width: min-content;
+  text-align: center;
 }
-.text-inp {
-  margin-top: 20px;
+.form-title :first-child {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+.form-title :last-child {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+
+/* form-input */
+.form-input {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px 30px;
-  
+  justify-content: space-between;
 }
-.form-item {
-  padding: 20px 30px;
-  flex-grow: 1;
-  height: 70px;
+
+.form-input > * {
+  width: 48%;
+  padding: 25px;
   border-radius: 5px;
   border-style: none;
-  text-transform: capitalize;
   font-weight: bold;
 }
-.form-item::placeholder{
-    opacity: 0.7;
+.form-input ::placeholder {
+  font-size: 18px;
+  font-weight: normal;
+  opacity: 0.7;
 }
 
-.radio-inp {
-  margin-top: 30px;
-  border: 2px solid white;
-
-  label {
-    font-size: 20px;
-  }
-}
-.check-inp {
-  margin-top: 15px;
-  border-style: none;
+/* form-radio */
+.form-radio {
+  display: flex;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 15px;
 }
 
-.submit-btn {
+.form-radio input {
+  align-self: flex-start;
+  margin: 5px 15px 0 0;
+}
+
+.form-radio label {
+  font-size: 22px;
+}
+
+/* form-check */
+.form-check {
+  margin-left: 20px;
+}
+
+/* submit button */
+input[type="submit"] {
   width: 100%;
-  margin-top: 15px;
-  padding: 25px;
+  padding: 15px;
   background-color: #29d2d1;
   border-radius: 5px;
   border-style: none;
   color: white;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
 }

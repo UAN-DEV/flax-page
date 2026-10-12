@@ -12,51 +12,45 @@
         <h2>Create an account</h2>
         <p>We always keep your name and email address private.</p>
       </div>
-      <article class="form-content">
-        <section class="text-inp">
-          <input type="text" class="form-item" placeholder="first name" />
-          <input type="text" class="form-item" placeholder="last name" />
-          <input type="text" class="form-item" placeholder="display name" />
-          <input type="email" class="form-item" placeholder="email address" />
-          <input type="password" class="form-item" placeholder="password" />
-          <input
-            type="password"
-            class="form-item"
-            placeholder="password comfirmation"
-          />
-        </section>
-        <section class="choice-inp">
-          <fieldset class="radio-inp">
-            <input type="radio" name="radio" id="bayer" />
-            <label for="bayer">Join As a Buyer</label>
-            <p>
-              I am looking for a Name, Logo or Tagline for my business, brand or
-              product.
-            </p>
-          </fieldset>
-          <fieldset class="radio-inp">
-            <input type="radio" name="radio" id="seller" />
-            <label for="seller">Join As a Creative or Marketplace Seller</label>
-            <p>
-              I plan to submit neme ideas, Logo designs or sell names in Domain
-              Marketplace.
-            </p>
-          </fieldset>
-          <fieldset class="check-inp">
-            <input type="checkbox" name="radio" id="allow" />
-            <label for="allow"
-              >Allow Squadhelp to send marketing/promotional offers from time to
-              time</label
-            >
-          </fieldset>
-        </section>
-        <input
-          type="submit"
-          class="submit-btn"
-          name="create"
-          value="Create account"
-        />
-      </article>
+      <div class="form-input">
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+      </div>
+      <div class="form-input">
+        <input type="text" placeholder="Display name" />
+        <input type="email" placeholder="Email address" />
+      </div>
+      <div class="form-input">
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Password comfirmation" />
+      </div>
+      <div class="form-radio">
+        <input type="radio" name="radio" id="bayer" />
+        <div class="input-label">
+          <label for="bayer">Join As a Buyer</label>
+          <p>
+            I am looking for a Name, Logo or Tagline for my business, brand or
+            product.
+          </p>
+        </div>
+      </div>
+      <div class="form-radio">
+        <input type="radio" name="radio" id="seller" />
+        <div class="input-lable">
+          <label for="seller">Join As a Creative or Marketplace Seller</label>
+          <p>
+            I plan to submit neme ideas, Logo designs or sell names in Domain
+            Marketplace.
+          </p>
+        </div>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" name="radio" id="allow" />
+        <label for="allow">
+          Allow Squadhelp to send marketing/promotional offers from time to time
+        </label>
+      </div>
+      <input type="submit" name="create" value="Create account" />
     </form>
   </body>
 </html>
